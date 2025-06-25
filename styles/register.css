@@ -2,7 +2,7 @@
 
 /* Definição da cor de destaque para a página de cadastro */
 :root {
-    --main-color: #d4af37; /* Dourado */
+    --main-color: #00ff0d; /* Dourado */
 }
 
 /* Cores específicas para elementos do cabeçalho */
@@ -19,7 +19,7 @@
 }
 .input-group input:focus {
     border-color: var(--main-color);
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3); /* Usando a cor base com transparência */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1); /* Usando a cor base com transparência */
 }
 
 /* Estilos específicos para requisitos de senha */
@@ -68,7 +68,7 @@
 .register-button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, var(--main-color), #b8860b); /* Usa a cor de destaque */
+    background: linear-gradient(135deg, var(--main-color), #009e08); /* Usa a cor de destaque */
     border: none;
     border-radius: 6px;
     color: #222;
@@ -82,7 +82,7 @@
 }
 .register-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); /* Usa a cor base com transparência */
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4); /* Usa a cor base com transparência */
 }
 
 /* Estilos específicos para o link de login */
