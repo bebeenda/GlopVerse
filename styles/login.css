@@ -19,7 +19,7 @@
 }
 .input-group input:focus {
     border-color: var(--main-color);
-    box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.1); /* Usando a cor base com transparência */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1); /* Usando a cor base com transparência */
 }
 
 /* Estilos específicos para "Lembrar-me" e "Esqueceu a senha" */
