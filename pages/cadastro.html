@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles1.css">
+    <title>Globverse - Torne-se um Aventureiro</title>
+    <!-- Biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <!-- Bordas decorativas RPG -->
+        <div class="rpg-border top-left"></div>
+        <div class="rpg-border top-right"></div>
+        <div class="rpg-border bottom-left"></div>
+        <div class="rpg-border bottom-right"></div>
+
+        <div class="rpg-decoration" style="top: 10px; left: 20px;">
+            <i class="fas fa-helmet-battle helmet-icon"></i>
+        </div>
+        <div class="rpg-decoration" style="top: 10px; right: 20px;">
+            <i class="fas fa-scroll scroll-icon"></i>
+        </div>
+
+        <div class="header">
+            <h1>Glopverse</h1>
+            <p>Comece sua jornada épica</p>
+        </div>
+
+        <form class="register-form">
+            <div class="input-group">
+                <label for="fullname">Nome Completo</label>
+                <input type="text" id="fullname" placeholder="Seu nome real" required>
+            </div>
+
+            <div class="input-group">
+                <label for="username">Nome de Aventureiro</label>
+                <input type="text" id="username" placeholder="Seu nome no jogo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha Secreta</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+                <ul class="password-requirements">
+                    <li>Mínimo 8 caracteres</li>
+                    <li>Pelo menos 1 número</li>
+                    <li>Pelo menos 1 caractere especial</li>
+                </ul>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" placeholder="••••••••" required>
+            </div>
+
+            <div class="terms-agreement">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Eu concordo com os <a href="#">Termos de Serviço</a> e <a href="#">Política de
+                        Privacidade</a> do Glopverse</label>
+            </div>
+
+            <button type="submit" class="register-button">Criar Conta</button>
+
+            <div class="divider">
+                <div class="divider-text">ou cadastre-se com</div>
+            </div>
+
+            <div class="social-register">
+                <button type="button" class="social-button google">
+                    <i class="fab fa-google"></i>
+                    Cadastre-se com Google
+                </button>
+
+                <button type="button" class="social-button apple">
+                    <i class="fab fa-apple"></i>
+                    Cadastre-se com Apple
+                </button>
+
+                <button type="button" class="social-button facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Cadastre-se com Facebook
+                </button>
+            </div>
+
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
