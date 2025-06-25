@@ -1,137 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* styles/login.css */
+
+/* Definição da cor de destaque para a página de login */
+:root {
+    --main-color: #00ff0d; /* Verde */
 }
 
-body {
-    position: relative;
-    overflow: hidden;
-}
-
-.login-container {
-    position: relative;
-    z-index: 1;
-    width: 90%;
-    max-width: 450px;
-    background: rgba(20, 20, 35, 0.85);
-    border-radius: 12px;
-    padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid #3a3828;
-    backdrop-filter: blur(5px);
-    animation: fadeIn 0.8s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
+/* Cores específicas para elementos do cabeçalho */
 .header h1 {
-    font-family: 'Times New Roman', serif;
-    color: #00ff0d;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-    position: relative;
-    display: inline-block;
+    color: var(--main-color);
 }
-
 .header h1::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #00ff0d, transparent);
+    background: linear-gradient(90deg, transparent, var(--main-color), transparent);
 }
 
-.header p {
-    color: #aaa;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+/* Cores específicas para inputs e labels */
+.input-group label {
+    color: var(--main-color);
+}
+.input-group input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.1); /* Usando a cor base com transparência */
 }
 
-.login-form .input-group {
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.login-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #00ff0d;
-    font-weight: 500;
-}
-
-.login-form input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #3a3828;
-    border-radius: 6px;
-    background: rgba(10, 10, 20, 0.7);
-    color: #e0e0e0;
-    font-size: 1rem;
-    transition: all 0.3s;
-}
-
-.login-form input:focus {
-    outline: none;
-    border-color: #00ff0d;
-    box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.1);
-}
-
-.login-form .remember-forgot {
+/* Estilos específicos para "Lembrar-me" e "Esqueceu a senha" */
+.remember-forgot {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
 }
-
-.login-form .remember-me {
+.remember-me {
     display: flex;
     align-items: center;
 }
-
-.login-form .remember-me input {
+.remember-me input {
     width: auto;
     margin-right: 8px;
 }
-
-.login-form .forgot-password a {
+.forgot-password a {
     color: #aaa;
     text-decoration: none;
     transition: color 0.3s;
 }
-
-.login-form .forgot-password a:hover {
-    color: #00ff0d;
+.forgot-password a:hover {
+    color: var(--main-color); /* Usa a cor de destaque */
     text-decoration: underline;
 }
 
+/* Estilos específicos para o botão de login */
 .login-button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #00ff0d, #009e08);
+    background: linear-gradient(135deg, var(--main-color), #009e08); /* Usa a cor de destaque */
     border: none;
     border-radius: 6px;
     color: #222;
@@ -143,174 +64,26 @@ body {
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
 }
-
 .login-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4); /* Usando a cor base com transparência */
 }
 
-.divider {
-    display: flex;
-    align-items: center;
-    margin: 1.5rem 0;
-}
-
-.divider::before,
-.divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #3a3828, transparent);
-}
-
-.divider-text {
-    padding: 0 15px;
-    color: #aaa;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.social-login {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.social-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s;
-    border: 1px solid transparent;
-}
-
-.social-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.social-button i {
-    margin-right: 10px;
-    font-size: 1.2rem;
-}
-
-.google {
-    background-color: rgb(255, 255, 255);
-    color: #a7a7a7;
-}
-
-.google:hover {
-    background-color: #f5f5f5;
-    border-color: rgb(0, 0, 0);
-}
-
-.apple {
-    background-color: #000;
-    color: #fff;
-}
-
-.apple:hover {
-    background-color: #111;
-    border-color: #ffffff;
-}
-
-.facebook {
-    background-color: #1877f2;
-    color: #fff;
-}
-
-.facebook:hover {
-    background-color: #166fe5;
-    border-color: rgb(255, 255, 255);
-}
-
-.register-link {
-    text-align: center;
-    margin-top: 1.5rem;
-    font-size: 0.9rem;
-}
-
+/* Estilos específicos para o link de cadastro */
 .register-link a {
-    color: #00ff0d;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s;
+    color: var(--main-color); /* Usa a cor de destaque */
 }
 
-.register-link a:hover {
-    text-decoration: underline;
-}
-
-/* Efeitos RPG */
+/* Cores para os efeitos RPG da página de login */
 .rpg-border {
-    position: absolute;
-    pointer-events: none;
+    border-color: var(--main-color); /* Aplica a cor de destaque às bordas */
 }
-
-.rpg-border.top-left {
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-left: 2px solid #00ff0d;
-    border-top: 2px solid #00ff0d;
-    border-radius: 8px 0 0 0;
-}
-
-.rpg-border.top-right {
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    border-right: 2px solid #00ff0d;
-    border-top: 2px solid #00ff0d;
-    border-radius: 0 8px 0 0;
-}
-
-.rpg-border.bottom-left {
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-left: 2px solid #00ff0d;
-    border-bottom: 2px solid #00ff0d;
-    border-radius: 0 0 0 8px;
-}
-
-.rpg-border.bottom-right {
-    bottom: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    border-right: 2px solid #00ff0d;
-    border-bottom: 2px solid #00ff0d;
-    border-radius: 0 0 8px 0;
-}
-
 .rpg-decoration {
-    position: absolute;
-    font-size: 1.5rem;
-    color: #00ff0d;
+    color: var(--main-color); /* Aplica a cor de destaque às decorações */
 }
-
 .sword-icon {
     transform: rotate(45deg);
 }
-
 .shield-icon {
     transform: rotate(-15deg);
-}
-
-@media (max-width: 480px) {
-    .login-container {
-        padding: 1.5rem;
-    }
-
-    .header h1 {
-        font-size: 2rem;
-    }
 }
