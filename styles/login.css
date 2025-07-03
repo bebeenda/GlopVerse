@@ -78,9 +78,11 @@
 .rpg-border {
     border-color: var(--main-color); /* Aplica a cor de destaque às bordas */
 }
-.rpg-decoration {
-    color: var(--main-color); /* Aplica a cor de destaque às decorações */
+.rpg-decoration a:link,
+.rpg-decoration a:visited {
+    color: var(--main-color);
 }
+
 .sword-icon {
     transform: rotate(45deg);
 }
