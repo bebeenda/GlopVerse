@@ -97,6 +97,12 @@
 .rpg-decoration {
     color: var(--main-color); /* Aplica a cor de destaque às decorações */
 }
+
+.rpg-decoration a:link,
+.rpg-decoration a:visited {
+    color: var(--main-color);
+}
+
 .helmet-icon {
     transform: rotate(15deg);
 }
