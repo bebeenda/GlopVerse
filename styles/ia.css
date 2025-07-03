@@ -2,8 +2,8 @@
 
 /* Definição da cor de destaque para a página inicial */
 :root {
-    --main-color: #d616dd; /* Dourado para a página inicial */
-    --secondary-color: #ff00dd;
+    --main-color: #94009a; /* Dourado para a página inicial */
+    --secondary-color: #b6039e;
     --dark-bg: #0a0a12;
     --light-text: #e0e0e0;
     --medium-text: #aaa;
@@ -53,7 +53,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--main-color);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 10px rgba(157, 0, 255, 0.5);
     margin-bottom: 0.2rem;
     position: relative;
 
@@ -82,7 +82,7 @@
 .main-header .rpg-decoration {
     font-size: 2.5rem;
     color: var(--secondary-color);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 8px rgba(157, 0, 255, 1);
 }
 
 .main-header .rpg-decoration a:link,
@@ -218,7 +218,7 @@
     font-size: 2.2rem;
     color: var(--main-color);
     margin-bottom: 1.5rem;
-    text-shadow: 0 0 8px rgba(9, 255, 0, 0.6);
+    text-shadow: 0 0 8px rgba(157, 0, 255, 0.5);
 }
 
 .feature-text h3 i {
@@ -354,7 +354,7 @@
     font-size: 1.3rem;
     color: var(--main-color);
     margin-bottom: 1rem;
-    text-shadow: 0 0 5px rgba(9, 255, 0, 0.6);
+    text-shadow: 0 0 5px rgba(157, 0, 255, 0.5);
 }
 
 .footer-section h4 i {
