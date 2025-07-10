@@ -170,7 +170,7 @@
 .hero-section {
     position: relative;
     height: 500px; /* Altura da seção hero */
-    background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    background: url(../img/img_fundo.jpg) no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,8 +239,8 @@
     margin-bottom: 2rem;
     background: rgba(25, 25, 40, 0.7);
     border-radius: 8px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     border: 1px solid var(--border-color); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     animation: slideIn 0.8s ease-out forwards;
     opacity: 0; /* Inicia oculto para a animação */
 }
@@ -305,12 +305,12 @@
 }
 
 .feature-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--main-color);
-    transition: transform 0.3s ease;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); */
+    /* border: 2px solid var(--main-color); */
+    transition: transform 0.7s ease;
 }
 
 .feature-image img:hover {
@@ -321,7 +321,7 @@
 .call-to-action-section {
     position: relative;
     padding: 5rem 2.5rem;
-    background: url('https://images.unsplash.com/photo-1511512578047-dfb3ea5f3e10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    background: rgba(25, 25, 40, 0.7);
     text-align: center;
     color: var(--light-text);
     margin-bottom: 3rem;
@@ -336,7 +336,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
 }
 
