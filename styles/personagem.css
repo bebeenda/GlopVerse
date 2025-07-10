@@ -235,15 +235,15 @@
 
 .feature-image {
     flex: 1;
-    min-width: 300px; /* Garante um tamanho mínimo para a imagem */
+    min-width: 200px; /* Garante um tamanho mínimo para a imagem */
 }
 
 .feature-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--main-color);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); */
+    /* border: 2px solid var(--main-color); */
     transition: transform 0.3s ease;
 }
 
@@ -255,7 +255,7 @@
 .call-to-action-section {
     position: relative;
     padding: 5rem 2.5rem;
-    background: url('https://images.unsplash.com/photo-1511512578047-dfb3ea5f3e10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    background: rgba(25, 25, 40, 0.7);
     text-align: center;
     color: var(--light-text);
     margin-bottom: 3rem;
@@ -401,6 +401,32 @@
     color: #888;
 }
 
+.feature-text-custom {
+    text-align: center;
+    }
+
+.feature-text-custom p {
+    text-align: center;
+    margin: 30px;
+    }
+.feature-text-custom h3{
+    font-size: 2.8rem;
+}
+.feature-text-custom .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg,  rgb(255, 105, 0),  rgb(255, 90, 0)); /* Verde para o CTA de cadastro */
+    color: #222;
+    padding: 18px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 115, 0, 0.911);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
     .main-header .logo h1 {
@@ -467,6 +493,7 @@
     .feature-section {
         padding: 3rem 1.5rem;
     }
+   
     .feature-text h3 {
         font-size: 1.8rem;
     }
